@@ -1,11 +1,10 @@
-public class Student {
+import java.util.Objects;
 
+public class Student {
     private int numarMatricol;
     private String prenume;
     private String nume;
     private String formatieDeStudiu;
-
-
 
     public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu) {
         this.numarMatricol = numarMatricol;
@@ -14,12 +13,23 @@ public class Student {
         this.formatieDeStudiu = formatieDeStudiu;
     }
 
-
-
-
     @Override
     public String toString() {
-        return "Student : numarMatricol=" + numarMatricol  + ", prenume=" + prenume + ", nume=" + nume + ", formatie de studiu=" + formatieDeStudiu + "." ;
+        return "Student : numarMatricol=" + this.numarMatricol + ", prenume=" + this.prenume + ", nume=" + this.nume + ", formatie de studiu=" + this.formatieDeStudiu + ".";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return Objects.equals(prenume, student.prenume) &&
+                Objects.equals(nume, student.nume) &&
+                Objects.equals(formatieDeStudiu, student.formatieDeStudiu);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(prenume, nume, formatieDeStudiu);
     }
 }
-
