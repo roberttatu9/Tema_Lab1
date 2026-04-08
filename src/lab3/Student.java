@@ -1,3 +1,5 @@
+package lab3;
+
 import java.util.Objects;
 
 public class Student {
@@ -12,6 +14,23 @@ public class Student {
         this.nume = nume;
         this.formatieDeStudiu = formatieDeStudiu;
     }
+
+    public String getNume() {
+        return nume;
+    }
+
+    public String getPrenume() {
+        return prenume;
+    }
+
+    public int getNumarMatricol() {
+        return numarMatricol;
+    }
+
+    public String getFormatieDeStudiu() {
+        return formatieDeStudiu;
+    }
+
 
     @Override
     public String toString() {

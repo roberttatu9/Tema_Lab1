@@ -1,3 +1,5 @@
+import lab3.Student;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -23,18 +25,22 @@ public class Main {
 
         //b) verificare Alis Popa TI 21/2
         System.out.println("VERIFICARE Alis Popa");
-        Student studentCautat1= new Student(120, "Alis", "Popa", "TI21/2");
+        Student studentCautat1 = new Student(120, "Alis", "Popa", "TI21/2");
         boolean existaAlis = existaStudentInHashSet(studentiSet, studentCautat1);
         System.out.println("Studentul Alis Popa exista in lista: " + existaAlis);
 
         //c) verificare Maria Popa TI 21/1
         System.out.println("VERIFICARE Maria Popa");
-        Student studentCautat2= new Student(112, "Maria", "Popa", "TI21/1");
+        Student studentCautat2 = new Student(112, "Maria", "Popa", "TI21/1");
         boolean existaMaria = existaStudentInHashSet(studentiSet, studentCautat2);
         System.out.println("Studenta Maria Popa exista in lista: " + existaMaria);
+
     }
 
     public static boolean existaStudentInHashSet(Set<Student> studenti, Student student) {
         return studenti.contains(student);
     }
+
+
+
 }

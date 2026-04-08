@@ -1,0 +1,6 @@
+Student : numarMatricol=1028, prenume=Mihai, nume=Ionescu, formatie de studiu=TI132/2.
+Student : numarMatricol=1024, prenume=Ioan, nume=Mihalcea, formatie de studiu=ISM141/1.
+Student : numarMatricol=1027, prenume=Paul, nume=Mohanu, formatie de studiu=TI132/1.
+Student : numarMatricol=1025, prenume=Andrei, nume=Popa, formatie de studiu=ISM141/2.
+Student : numarMatricol=1026, prenume=Bianca, nume=Popescu, formatie de studiu=TI131/2.
+Student : numarMatricol=1026, prenume=Anamaria, nume=Prodan, formatie de studiu=TI131/1.
