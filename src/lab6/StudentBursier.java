@@ -1,0 +1,38 @@
+package lab6;
+
+import lab3.Student;
+
+import java.util.Objects;
+
+public class StudentBursier extends Student {
+    private double cuantumBursa;
+
+    public StudentBursier(int numarMatricol, String prenume, String nume, String formatieDeStudiu, float nota, double cuantumBursa) {
+        super(numarMatricol, prenume, nume, formatieDeStudiu);
+        this.setNota(nota);
+        this.cuantumBursa = cuantumBursa;
+    }
+
+    public double getCuantumBursa() {
+        return cuantumBursa;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s [%.2f], cuantumBursa: %.2f", super.toString(), getNota(), cuantumBursa);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof StudentBursier)) return false;
+        if (!super.equals(o)) return false;
+        StudentBursier that = (StudentBursier) o;
+        return Double.compare(that.cuantumBursa, cuantumBursa) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), cuantumBursa);
+    }
+}
