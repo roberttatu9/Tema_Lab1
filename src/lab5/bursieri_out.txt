@@ -1,0 +1,4 @@
+Student : numarMatricol=1025, prenume=Andrei, nume=Popa, formatie de studiu=ISM141/2, nota=8.7. [Bursa: 725.5]
+Student : numarMatricol=1024, prenume=Ioan, nume=Mihalcea, formatie de studiu=ISM141/1, nota=9.8. [Bursa: 801.1]
+Student : numarMatricol=1026, prenume=Anamaria, nume=Prodan, formatie de studiu=TI131/1, nota=8.9. [Bursa: 745.5]
+Student : numarMatricol=1029, prenume=Bianca, nume=Popescu, formatie de studiu=TI131/1, nota=9.1. [Bursa: 780.8]
