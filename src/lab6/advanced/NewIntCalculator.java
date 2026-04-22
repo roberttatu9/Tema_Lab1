@@ -9,22 +9,22 @@ public class NewIntCalculator extends ACalculator<Integer> {
     }
 
     public NewIntCalculator add(Integer a) {
-        state = (Integer)state + a;
+        state = (Integer) state + a;
         return this;
     }
 
     public NewIntCalculator subtract(Integer a) {
-        state = (Integer)state - a;
+        state = (Integer) state - a;
         return this;
     }
 
     public NewIntCalculator multiply(Integer a) {
-        state = (Integer)state * a;
+        state = (Integer) state * a;
         return this;
     }
 
     public NewIntCalculator divide(Integer a) {
-        state = (Integer)state / a;
+        state = (Integer) state / a;
         return this;
     }
 }

@@ -1,12 +1,12 @@
 package lab6.advanced;
 
 public abstract class ACalculator<T> {
-    protected Object state;
+    Object state;
 
-    abstract <S extends ACalculator> S init();
+    public abstract <S extends ACalculator> S init();
 
     public T result() {
-        return (T)state;
+        return (T) state;
     }
 
     public void clear() {
