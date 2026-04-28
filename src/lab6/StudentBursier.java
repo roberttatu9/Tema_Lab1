@@ -1,16 +1,16 @@
 package lab6;
 
 import lab3.Student;
-
 import java.util.Objects;
 
 public class StudentBursier extends Student {
-    private double cuantumBursa;
+    double cuantumBursa;
 
-    public StudentBursier(int numarMatricol, String prenume, String nume, String formatieDeStudiu, float nota, double cuantumBursa) {
+    public StudentBursier(int numarMatricol, String prenume, String nume,
+                          String formatieDeStudiu, double nota, double bursa) {
         super(numarMatricol, prenume, nume, formatieDeStudiu);
-        this.setNota(nota);
-        this.cuantumBursa = cuantumBursa;
+        super.setNota((float) nota);
+        this.cuantumBursa = bursa;
     }
 
     public double getCuantumBursa() {
@@ -19,16 +19,17 @@ public class StudentBursier extends Student {
 
     @Override
     public String toString() {
-        return String.format("%s [%.2f], cuantumBursa: %.2f", super.toString(), getNota(), cuantumBursa);
+        String s = super.toString();
+        s += String.format(" [ %6.2f ]", cuantumBursa);
+        return s;
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof StudentBursier)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         StudentBursier that = (StudentBursier) o;
-        return Double.compare(that.cuantumBursa, cuantumBursa) == 0;
+        return Double.compare(cuantumBursa, that.cuantumBursa) == 0;
     }
 
     @Override
